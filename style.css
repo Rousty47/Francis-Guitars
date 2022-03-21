@@ -1,0 +1,252 @@
+body, html {
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+}
+
+body .nadpis, html .nadpis {
+  display: -ms-grid;
+  display: grid;
+}
+
+body .nadpis img, html .nadpis img {
+  width: 50px;
+  float: left;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+body .nadpis h1, html .nadpis h1 {
+  color: #444444;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 225%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0;
+  padding: 0;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+body .kontakt, html .kontakt {
+  background-color: #008cff;
+  color: white;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding-right: 5px;
+  -webkit-box-shadow: black 0px 1px 6px;
+          box-shadow: black 0px 1px 6px;
+}
+
+body .logo, html .logo {
+  -webkit-box-shadow: black 0px 1px 6px;
+          box-shadow: black 0px 1px 6px;
+}
+
+body .logo img, html .logo img {
+  width: 200px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .menu, html .menu {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: black 0px 1px 6px;
+          box-shadow: black 0px 1px 6px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
+  text-align: center;
+  font-size: 25px;
+}
+
+body .menu a, html .menu a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 10px 5px 10px 5px;
+  background-color: #afafaf;
+  -webkit-transition: 0.30s;
+  transition: 0.30s;
+}
+
+body .menu a:hover, html .menu a:hover {
+  background-color: #8b8b8b;
+  -webkit-transition: 0.30s;
+  transition: 0.30s;
+}
+
+body .main, html .main {
+  background-color: white;
+  padding: 2%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body .main .info, html .main .info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+}
+
+body .main .info .onas, html .main .info .onas {
+  border: grey solid 2px;
+  background-color: white;
+  padding: 2%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+body .main .info .map, html .main .info .map {
+  border: grey solid 2px;
+  background-color: white;
+  padding: 2%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+body .main .info .map .mapa, html .main .info .map .mapa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  margin: 0;
+  padding: 0;
+}
+
+body .main .info .map .mapa iframe, html .main .info .map .mapa iframe {
+  width: 90vh;
+  height: 60vh;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 2px 1px black;
+          box-shadow: 0px 0px 2px 1px black;
+  margin: 0;
+  padding: 0;
+}
+
+body .main .info .servis, html .main .info .servis {
+  border: grey solid 2px;
+  background-color: white;
+  height: auto;
+  padding: 2%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+body .main .galeria, html .main .galeria {
+  border: grey solid 2px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10%;
+  padding: 2%;
+}
+
+body .main .galeria .karty, html .main .galeria .karty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+}
+
+body .main .galeria .karty .karta, html .main .galeria .karty .karta {
+  background-color: #dadada;
+  border: solid grey 2px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  margin: 2px;
+  padding: 1px;
+}
+
+body .main .galeria .karty .karta img, html .main .galeria .karty .karta img {
+  width: 350px;
+  border: solid grey 2px;
+  margin: 1vh;
+}
+
+body .main .galeria .karty .karta p, html .main .galeria .karty .karta p {
+  text-align: center;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 40px;
+}
+
+body .kotva, html .kotva {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+body .kotva img, html .kotva img {
+  width: 70px;
+  float: right;
+  margin: 10px;
+}
+
+body .kotva a, html .kotva a {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  background-color: #525252;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+}
+
+.footer div {
+  margin: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footer div img.footerimg {
+  width: 5vh;
+  margin: 10px;
+}
+
+.footer div p {
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
